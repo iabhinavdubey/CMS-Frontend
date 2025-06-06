@@ -21,7 +21,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://cms-backend.onrender.com/login",
         { email, password }
       );
       const { token, user } = response.data.data;
