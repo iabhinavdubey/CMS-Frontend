@@ -134,7 +134,7 @@ function Dashboard() {
   const handleDeleteUser = async (id) => {
     try {
       await axios.delete(
-        `https://localhost:5000/api/users/${id}`
+        `https://cms-backend.onrender.com/users/${id}`
       );
       setUsers(users.filter((user) => user._id !== id));
       toast.success("User deleted successfully!");

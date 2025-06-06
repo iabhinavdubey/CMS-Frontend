@@ -47,7 +47,7 @@ function EditUser({ show, onClose, member, onUserUpdated }) {
     setIsSubmitting(true);
     try {
       const response = await axios.put(
-        `https://localhost:5000/api/users/${formData._id}`, 
+        `https://cms-backend.onrender.com/users/${formData._id}`, 
         payload
       );
       toast.success("User updated successfully!");
